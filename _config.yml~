@@ -23,7 +23,7 @@ keywords: "blog, politics, technology, philosophy, travel"
 
 # Site settings
 url: adshadlib.github.io
-baseurl: ""
+baseurl: "/"
 # baseurl: ""
 
 # Author settings
