@@ -1,40 +1,51 @@
-# .X [![Build Status](https://travis-ci.org/nandomoreirame/dotX.svg?branch=master)](https://travis-ci.org/nandomoreirame/dotX)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-> Simple & Beautiful Jekyll theme
+# Daktilo
+Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
 
-### [Demo](http://nandomoreira.me/dotX/)
+# More info and Live preview
+[Click here](http://daktilo.github.io/) to see the theme in action.
 
-![dotX - free Jekyll theme](/screenshot.png)
+# Features
+- Fully responsive
+- [Disqus](https://disqus.com/) integration for comments.
+- Google Analytics integration.
+- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
+- Support for categories.
+- Font-Awesome Icons.
+- Optimized for SEO.
+- Coolest [404 page ever](http://electrik-frog.com/daktilo/404.html).
 
+# How to use it
+Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
+Note that the `title` property is what will be displayed as logo.
+
+Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
+
+# Using categories
+Categories are little bit tricky. Please make sure to do the following for each category:
+
+- Create a file within `categories` folder with the name of your category
+For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
+
+``` html
+---
+layout: category
+category: an-awesome-category
+permalink: /categories/an-awesome-category/
 ---
 
-### Start in 4 steps
+```
 
-1. Download or clone repo `git clone git@github.com:nandomoreirame/dotX.git`
-2. Enter the folder: `cd dotX/`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `jekyll serve`
+- Create an entry inside `_data/categories.yml`
 
-Access, [localhost:4000/dotX](http://localhost:4000/dotX)
+``` html
+- slug: an-awesome-category
+  name: An Awesome Category
+```
 
-### Deploy in Github pages in 2 steps
+- Then you will see it in the footer in the `Explore` section.
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
+# License
 
----
-
-### Using Rake tasks
-
-* Create a new page: `rake page name="contact.md"`
-* Create a new post: `rake post title="TITLE OF THE POST"`
-
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
-
-Enjoy :yum:
-
-by [nandomoreira.me](http://nandomoreira.me)
+The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
