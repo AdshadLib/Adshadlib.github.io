@@ -1,2 +1,46 @@
-name: Shadi Al'lababidi Paterson
-markdown: kramdown
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
+
+# permalink and highlighter
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+# SEO settings
+title: adShadLib
+description: "Keeping account"
+keywords: "blog, politics, technology, philosophy, travel"
+
+# Site settings
+url: adshadlib.github.io
+baseurl: "/index.html"
+# baseurl: ""
+
+# Author settings
+author:
+  name      : Shadi Al'lababidi Paterson	
+  job       : Growth
+  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb     : /images/author.jpg
+  email     : shadipaterson.sp@gmail.com
+  url       : http://nandomoreira.me
+  github    : http://github.com/adshadlib
+  twitter   : http://twitter.com/allabad
+  facebook  : http://facebook.com/shadip94
+  linkedin  : http://linkedin.com/in/nandomoreirame
+
+# google_analytics: UA-52446115-1
+repo: http://github.com/adshadlib/adshadlib.github.io
+
+# comments
+disqus_shortname: "fernandomoreira"
